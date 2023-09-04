@@ -36,7 +36,6 @@ public class PacketListener extends PacketListenerAbstract {
             if(!payload.getChannelName().equals(isNew? "mc:brand": "MC|Brand")) return;
 
             String brand = new String(payload.getData(), StandardCharsets.UTF_8).substring(1);
-            player.sendMessage(ChatColor.RED + "You're joined with " + ChatColor.GOLD + brand);
             // premium clients
             String[] premCLs = { "CB", "Lunarclient:v", "eyser", "LC"};
 

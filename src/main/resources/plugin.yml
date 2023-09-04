@@ -1,3 +1,4 @@
 name: DeCLSpoof
 version: '${project.version}'
 main: me.overlight.declspoof.DeCLSpoof
+api-version: 1.13

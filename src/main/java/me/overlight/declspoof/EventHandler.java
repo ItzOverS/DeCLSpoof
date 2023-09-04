@@ -11,6 +11,6 @@ public class EventHandler implements Listener {
         Bukkit.getScheduler().runTaskLaterAsynchronously(DeCLSpoof.ins, () -> {
             if(PacketListener.client.getOrDefault(e.getPlayer().getName(), null) == null)
                 Bukkit.getScheduler().runTask(DeCLSpoof.ins, () -> e.getPlayer().kickPlayer(ChatColor.RED + "Please Rejoin"));
-        }, 500);
+        }, 1000);
     }
 }
